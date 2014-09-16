@@ -1,8 +1,8 @@
-package com.metis.android.backend.volleybackend;
+package com.metis.android.template.controller.activity;
 
 import android.view.View;
 
-import junit.framework.Assert;
+import com.metis.android.template.controller.activity.MyActivity;
 
 import org.fest.assertions.api.ANDROID;
 import org.hamcrest.MatcherAssert;
@@ -13,7 +13,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.internal.util.ConsoleMockitoLogger;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.util.ActivityController;
 

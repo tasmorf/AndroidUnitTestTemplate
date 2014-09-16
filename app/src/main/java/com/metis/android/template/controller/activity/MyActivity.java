@@ -1,4 +1,4 @@
-package com.metis.android.backend.volleybackend;
+package com.metis.android.template.controller.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.metis.android.template.R;
 
 import java.io.IOException;
 

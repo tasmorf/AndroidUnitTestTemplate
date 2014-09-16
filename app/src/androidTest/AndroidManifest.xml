@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.metis.android.backend.volleybackend.tests" >
+    package="com.metis.android.template.tests" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -13,6 +13,6 @@
 
     <instrumentation
         android:name="com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
-        android:targetPackage="com.metis.android.backend.volleybackend" />
+        android:targetPackage="com.metis.android.template" />
 
 </manifest>

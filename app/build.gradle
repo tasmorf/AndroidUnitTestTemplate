@@ -17,8 +17,8 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         versionCode rootProject.versionCode
         versionName rootProject.versionName
-        applicationId "com.metis.android.backend.volleybackend"
-        testApplicationId "com.metis.android.backend.volleybackend.tests"
+        applicationId "com.metis.android.template"
+        testApplicationId "com.metis.android.template.tests"
         testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
     }
     buildTypes {

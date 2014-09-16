@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.metis.android.backend.volleybackend.MyActivity" >
+    tools:context="com.metis.android.backend.com.metis.android.template.controller.activity.MyActivity" >
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"

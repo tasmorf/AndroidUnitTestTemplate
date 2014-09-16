@@ -5,8 +5,8 @@ import android.test.ActivityInstrumentationTestCase2;
 import com.google.android.apps.common.testing.ui.espresso.Espresso;
 import com.google.android.apps.common.testing.ui.espresso.assertion.ViewAssertions;
 import com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers;
-import com.metis.android.backend.volleybackend.MyActivity;
-import com.metis.android.backend.volleybackend.R;
+import com.metis.android.template.R;
+import com.metis.android.template.controller.activity.MyActivity;
 
 import org.hamcrest.Matchers;
 
