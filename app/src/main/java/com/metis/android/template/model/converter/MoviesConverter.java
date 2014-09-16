@@ -1,4 +1,4 @@
-package com.metis.android.template.model.bean.converter;
+package com.metis.android.template.model.converter;
 
 import com.fasterxml.jackson.databind.util.StdConverter;
 import com.metis.android.template.model.bean.client.Movie;

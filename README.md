@@ -1,5 +1,4 @@
-AndroidUnitTestTemplate
-=======================
+# AndroidUnitTestTemplate
 
 Contains a basic android project with all that you would need if you need to develop on Android Studio and be able to run both Instrumentation and actual unit tests both on your IDE and the command line.
 Uses the following:
@@ -10,3 +9,9 @@ Uses the following:
 - [Robolectric](http://robolectric.org/), along with [Mockito](https://code.google.com/p/mockito/) and [Fest](http://www.vogella.com/tutorials/FEST/article.html) for unit tests
 - The project also uses the [android-unit-test](https://github.com/JCAndKSolutions/android-unit-test) plugin for gradle (works great with the [android-studio-unit-test-plugin](https://github.com/evant/android-studio-unit-test-plugin) in order to run your  unit tests on the IDE)
 - A basic lint and proguard configuration has been added
+
+## The Project
+
+The app connects to the [Rotten Tomatoes API](http://developer.rottentomatoes.com/) in order to get a list of movies,
+ which are displayed along with their images on a listview. When the user clicks on a movie, a popup appears, 
+ containing the movie title and synopsis.

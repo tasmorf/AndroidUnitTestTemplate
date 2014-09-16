@@ -26,7 +26,9 @@ import static com.metis.android.template.module.view.IndicatorModule.movieListIn
 /**
  * Downloads and then uses an indicator to display a list of movies
  */
-public class MovieListFragment extends Fragment implements Response.Listener<List<Movie>>,Response.ErrorListener, OnMovieClickListener {
+public class MovieListFragment extends BaseFragment implements Response.Listener<List<Movie>>,
+        Response.ErrorListener,
+        OnMovieClickListener {
 
     private RequestQueue requestQueue;
     private RequestFactory<List<Movie>> moviesRequestFactory;
@@ -55,7 +57,7 @@ public class MovieListFragment extends Fragment implements Response.Listener<Lis
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_movie_list, container, false);
         indicator.initialize(view, this);
-        requestQueue.add(moviesRequestFactory.createRequest(getString(R.string.movies_url), this, this));
+        requestQueue.add(moviesRequestFactory.createRequest(getStringOveride(R.string.movies_url), this, this));
         return view;
     }
 
