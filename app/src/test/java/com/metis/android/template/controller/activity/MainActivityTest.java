@@ -2,8 +2,6 @@ package com.metis.android.template.controller.activity;
 
 import android.view.View;
 
-import com.metis.android.template.controller.activity.MyActivity;
-
 import org.fest.assertions.api.ANDROID;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
@@ -17,16 +15,16 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.util.ActivityController;
 
 @RunWith(RobolectricTestRunner.class)
-public class MyActivityTest {
+public class MainActivityTest {
 
     @Mock
     private View.OnClickListener bla;
-    private MyActivity activity;
+    private MainActivity activity;
 
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        activity = new MyActivity();
+        activity = new MainActivity();
         ActivityController.of(activity).create();
     }
 

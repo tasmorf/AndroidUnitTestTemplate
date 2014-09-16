@@ -6,13 +6,13 @@ import com.google.android.apps.common.testing.ui.espresso.Espresso;
 import com.google.android.apps.common.testing.ui.espresso.assertion.ViewAssertions;
 import com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers;
 import com.metis.android.template.R;
-import com.metis.android.template.controller.activity.MyActivity;
+import com.metis.android.template.controller.activity.MainActivity;
 
 import org.hamcrest.Matchers;
 
-public class EspressoTest extends ActivityInstrumentationTestCase2<MyActivity> {
+public class EspressoTest extends ActivityInstrumentationTestCase2<MainActivity> {
     public EspressoTest() {
-        super(MyActivity.class);
+        super(MainActivity.class);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class EspressoTest extends ActivityInstrumentationTestCase2<MyActivity> {
 
     public void testEspressoClickingListViewPopulatesTextView() {
 
-        Espresso.onView(ViewMatchers.withId(R.id.hello))
+        Espresso.onView(ViewMatchers.withId(R.id.thumbnail))
                 .check(ViewAssertions.matches(ViewMatchers.withText(Matchers.containsString("Hello"))));
     }
 }

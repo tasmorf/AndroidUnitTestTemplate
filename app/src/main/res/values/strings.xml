@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">VolleyBackend</string>
-    <string name="title_activity_my">MyActivity</string>
+    <string name="app_name">Template</string>
+    <string name="title_activity_main">Main Activity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="movies_url">http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/upcoming.json?apiKey=33nsbr35yugtevhjk9nnpxwb</string>
+    <string name="an_error_happened">An error happened!</string>
 
 </resources>
