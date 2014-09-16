@@ -10,6 +10,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.metis.android.template.R;
+import com.metis.android.template.controller.activity.SynopsisDialogActivity;
 import com.metis.android.template.controller.listener.OnMovieClickListener;
 import com.metis.android.template.model.bean.client.Movie;
 import com.metis.android.template.model.request.RequestFactory;
@@ -73,6 +74,6 @@ public class MovieListFragment extends BaseFragment implements Response.Listener
 
     @Override
     public void onMovieClicked(Movie movie) {
-
+        startActivity(SynopsisDialogActivity.getSynopsisDialogIntent(getActivityOveride(), movie.getTitle(), movie.getSynopsis()));
     }
 }
