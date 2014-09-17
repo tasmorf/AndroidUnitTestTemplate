@@ -2,4 +2,5 @@
 <lint>
     <!-- Disable this given check in this project -->
     <issue id="AppCompatResource" severity="ignore" />
+    <issue id="ValidFragment" severity="ignore" />
 </lint>

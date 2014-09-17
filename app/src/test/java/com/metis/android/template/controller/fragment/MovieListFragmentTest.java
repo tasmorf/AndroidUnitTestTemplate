@@ -8,9 +8,11 @@ import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.metis.android.template.fake.FakeLayoutInflater;
 import com.metis.android.template.fake.FakeRequestFactory;
+import com.metis.android.template.model.UrlProvider;
 import com.metis.android.template.model.bean.client.Movie;
 import com.metis.android.template.model.request.RequestFactory;
 import com.metis.android.template.stub.StubRequest;
+import com.metis.android.template.stub.StubUrlProvider;
 import com.metis.android.template.view.indicator.MovieListIndicator;
 
 import org.junit.Before;
@@ -39,6 +41,7 @@ public class MovieListFragmentTest {
     private VolleyError stubError = new VolleyError();
     private Request<List<Movie>> stubMovieListRequest = new StubRequest<List<Movie>>();
     private List<Movie> stubResponse = new ArrayList<Movie>();
+    private UrlProvider stubUrlProvider = new StubUrlProvider();
 
     //Fake
     private RequestFactory<List<Movie>> fakeRequestFactory = new FakeRequestFactory<List<Movie>>(stubMovieListRequest);
@@ -55,7 +58,7 @@ public class MovieListFragmentTest {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        sut = new MovieListFragment(mockRequestQueue, fakeRequestFactory, mockIndicator);
+        sut = new MovieListFragment(mockRequestQueue, fakeRequestFactory, mockIndicator, stubUrlProvider);
         sut.onAttach(act);
     }
 

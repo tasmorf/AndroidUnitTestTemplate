@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="movies_url">http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/upcoming.json?apiKey=33nsbr35yugtevhjk9nnpxwb</string>
+
+</resources>
