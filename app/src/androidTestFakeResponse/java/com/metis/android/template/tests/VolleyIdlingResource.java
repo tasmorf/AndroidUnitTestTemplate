@@ -1,4 +1,4 @@
-package com.metis.android.backend.volleybackend.tests;
+package com.metis.android.template.tests;
 
 import android.util.Log;
 

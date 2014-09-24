@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+project.ext['src.java.dir'] = ['src/test/java']
+project.ext['module.iml.file'] = "app.iml"
+apply from: 'gradle-android-add-dir.gradle'
+
 android {
 
     packagingOptions {
@@ -40,7 +44,6 @@ android {
 }
 
 apply plugin: 'android-unit-test'
-tasks.findByName("assembleDebug").dependsOn("testDebugClasses")
 
 dependencies {
 

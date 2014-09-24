@@ -11,7 +11,9 @@ device) along with the GoogleInstrumentationTestRunner
 - [espresso-volley-tests](https://github.com/bolhoso/espresso-volley-tests) was used in order to synchronize espresso
  and the volley request queue
 - [Robolectric](http://robolectric.org/), along with [Mockito](https://code.google.com/p/mockito/) and [Fest](http://www.vogella.com/tutorials/FEST/article.html) for unit tests
-- The project also uses the [android-unit-test](https://github.com/JCAndKSolutions/android-unit-test) plugin for gradle (works great with the [android-studio-unit-test-plugin](https://github.com/evant/android-studio-unit-test-plugin) in order to run your  unit tests on the IDE)
+- The project also uses the [android-unit-test](https://github.com/JCAndKSolutions/android-unit-test) plugin for 
+gradle (works great with the [gradle-android-add-dir](https://github.com/sababado/gradle-android-add-dir) script in 
+order to run your  unit tests on the IDE)
 - A basic lint and proguard configuration has been added
 
 ## The Main Project
